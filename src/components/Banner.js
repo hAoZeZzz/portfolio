@@ -47,7 +47,7 @@ function Banner() {
           <Col xs={12} md={6} xl={6}>
             <span className="tagline">Welcome to My Porfolio!</span>
             <h1>Hi! I am Haoze Zhang, A <span className="warp">{text}</span></h1>
-            <p>introduction of mine</p>
+            <p>IT postgraduate in UNSW from 2022 to 2024. Live in Sydney, Born in China.</p>
             <button onClick={()=> console.log('connect')}>Let's Connect!<ArrowRightCircle size={25}/></button>
           </Col>
           <Col xs={12} md={6} xl={6}>
