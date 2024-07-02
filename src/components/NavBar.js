@@ -27,6 +27,10 @@ function NavBar() {
     setActiveLink(value);
   }
 
+  const handleClick = () => {
+    window.location.href = 'http://www.linkedin.com/in/haoze-zhang-8713a526a';
+  }
+
   return (
     <Navbar bg="dark" data-bs-theme="dark" className={scrolled ? 'scroll' : ''}>
       <Container>
@@ -39,15 +43,14 @@ function NavBar() {
         <Navbar.Collapse id='basic-navbar-nav'>
           <Nav className="me-auto">
             <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-            <Nav.Link href="#pricing" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
+            <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
             <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
           </Nav>
           <span className='navbar-text'>
             <div className='social-icon'>
-                {/* add my linkedin*/}
-                <a href='#'><img src={navIcon} alt='' /></a> 
+                <a href='http://www.linkedin.com/in/haoze-zhang-8713a526a'><img src={navIcon} alt='' /></a> 
             </div>
-            <button className='vvd' onClick={() => console.log('connect')}>Let'go</button>
+            <button className='vvd' onClick={handleClick}>Let'go</button>
           </span>
         </Navbar.Collapse>
       </Container>

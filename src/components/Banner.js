@@ -11,6 +11,10 @@ function Banner() {
   const [delta, setDelta] = useState(200)
   const period = 2000;
   
+  const handleClick = () => {
+    window.location.href = 'http://www.linkedin.com/in/haoze-zhang-8713a526a';
+  }
+  
   useEffect(() => {
     let ticker = setInterval(() => {
       tick()
@@ -47,8 +51,9 @@ function Banner() {
           <Col xs={12} md={6} xl={6}>
             <span className="tagline">Welcome to My Porfolio!</span>
             <h1>Hi! I am Haoze Zhang, A <span className="warp">{text}</span></h1>
-            <p>IT postgraduate in UNSW from 2022 to 2024. Live in Sydney, Born in China.</p>
-            <button onClick={()=> console.log('connect')}>Let's Connect!<ArrowRightCircle size={25}/></button>
+            <p>IT postgraduate in UNSW from 2022 to 2024. Live in Sydney, Born in China. Love basktball & soccer. Look forward to get touch with you!</p>
+            <p>Email Address: haoze883@gmail.com</p>
+            <button onClick={handleClick}>Let's Connect!<ArrowRightCircle size={25}/></button>
           </Col>
           <Col xs={12} md={6} xl={6}>
             <img src={headerImage} alt="headerImg" />
